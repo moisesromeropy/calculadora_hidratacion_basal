@@ -1,0 +1,124 @@
+/* Importamos una fuente de texto de google fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+
+body{
+    /* Definimos el colorde fondo, la fuente de texto y el color que utilizaremos
+     si no encuentra montserrat, utilizará sans-serif */
+    background: #f6f5f7; 
+    font-family: 'Montserrat', sans-serif;
+    color: #3E363F;
+}
+
+#contenedor {
+    /* Agregamos un ancho de 900px, una altura de 500px y alineamos todo el texto en el centro */
+    width: 900px;
+    height: 500px;
+    text-align: center;
+    /* Centrar el div horizontal y verticalmente */
+    /* position absolute es el posicionamiento del contenedor en relación a su ancestro más cercano*/
+    position: absolute;
+    /* con inset estamos definiendo left, right, top y bottom a 0, que esté a una distancia 0*/
+    inset: 0;
+    /* con margin auto estamos definiendo de manera automatica el margen, el margen es el espacio
+    situado alrededor del borde*/
+    margin: auto;
+    /* agregamos borde redondeado de 10px */
+    border-radius: 10px;
+    overflow: hidden;
+    /* agregamos una sombra al contenedor */
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+    0 10px 10px rgba(0,0,0,0.22);;
+}
+
+#calculadora {
+    /* colocamos un color de fondo blanco */
+    background: white;
+    /* definimos un ancho del 50%, una altura del 100% y le decimos que queremos que el elemento
+    flote a la izquierda. */
+    /* Con esto logramos que los div queden lado a lado */
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#detalle {
+    /* definimos un background rosa */
+    background: #FF416C;
+    /* definimos un ancho del 50%, una altura del 100% y le decimos que queremos que el elemento
+    flote a la izquierda. */
+    /* Con esto logramos que los div queden lado a lado */
+    width: 50%;
+    height: 100%;
+    float: left;
+    /* color de texto blanco  */
+    color: #f6f5f7;
+}
+
+
+.contenido{    
+    /* colocamos el posicionamiento en su posición normal */
+    position: relative;
+    /* le damos un top, o margen superior de 50% */
+    top: 50%;
+    /* con transform movemos un 50% menos en la coordenada Y */
+    transform: translateY(-50%);
+    /* con overflow podemos recortar el contenido, agregar barras de desplazamiento o mostrar
+    contenido excedente, en este caso recortamos y no se muestran barras de posicion */
+    overflow: hidden;
+    /* definimos un padding (espacio situado entre borde y el elemento) de 40px */
+    padding: 40px;
+
+}
+
+input{
+    /* agregamos un ancho del 70%, padding superior e inferior de 12px y de derecha e izquiera de 15px */
+    width: 70%;
+    padding: 12px 15px;
+    /* quitamos el borde y agregamos un bakcground */
+    border: none;
+    background-color: #eee;  
+}
+
+button{
+    margin-top: 10px;
+    /* tamaño de fuente de 15px */
+    font-size: 15px;
+    /* fuente en negrita */
+    font-weight: bold;
+    /* padding superior e inferior de 12px derecha e izquierda de 45px */
+    padding: 12px 45px;
+    /* agregamos borde redondeado de 30px */
+    border-radius: 30px;
+    background-color: #FF416c;
+    /* border solid (lineas continuas) de 1px de tamaño */
+    border: 1px solid #FF416c;
+    color: #FFFFFF;
+    /* transformamos el texto en mayusculas */
+    text-transform: uppercase;
+    /* espacio entre letras de 1px */
+    letter-spacing: 1px;
+    /* agregamos una transicion de inicio lento de 20ms a la transformación  */
+    transition: transform 20ms ease-in;
+}
+
+button:active {
+    /* cuando el boton se activa reducimos el tamaño del elemento*/
+	transform: scale(0.95);
+}
+
+#error {
+
+    color: red;
+    font-weight: bold;
+    display: none;
+
+}
+
+.resultado{
+    color: #0A81D1;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+    display: none;
+}
