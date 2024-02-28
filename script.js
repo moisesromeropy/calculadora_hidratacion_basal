@@ -32,6 +32,7 @@ CALCULAR.addEventListener('click', () => {
         FLU.style.display = 'none';
         MAN.style.display = 'none';
     } else {
+        ERROR.innerHTML = '* Debe completar todos los datos'
         ERROR.style.display = 'block';
         FLU.style.display = 'none';
         MAN.style.display = 'none';
