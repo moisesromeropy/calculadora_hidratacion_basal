@@ -26,6 +26,11 @@ CALCULAR.addEventListener('click', () => {
         MAN.innerHTML = 'SCx2000: ' + scx2000 + ' cc/24hs';
         FLU.style.display = 'block';
         MAN.style.display = 'block';
+    } else if(DATO < 0 ){
+        ERROR.innerHTML = 'Por favor, ingrese un número mayor a 0'
+        ERROR.style.display = 'block';
+        FLU.style.display = 'none';
+        MAN.style.display = 'none';
     } else {
         ERROR.style.display = 'block';
         FLU.style.display = 'none';
