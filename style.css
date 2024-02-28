@@ -44,7 +44,7 @@ body{
 
 #detalle {
     /* definimos un background rosa */
-    background: #FF416C;
+    background: 	#00FFFF;
     /* definimos un ancho del 50%, una altura del 100% y le decimos que queremos que el elemento
     flote a la izquierda. */
     /* Con esto logramos que los div queden lado a lado */
@@ -90,9 +90,9 @@ button{
     padding: 12px 45px;
     /* agregamos borde redondeado de 30px */
     border-radius: 30px;
-    background-color: #FF416c;
+    background-color: #00FFFF;
     /* border solid (lineas continuas) de 1px de tamaño */
-    border: 1px solid #FF416c;
+    border: 1px solid 	#00FFFF;
     color: #FFFFFF;
     /* transformamos el texto en mayusculas */
     text-transform: uppercase;
@@ -121,4 +121,9 @@ button:active {
     font-size: 25px;
     margin-bottom: 5px;
     display: none;
+}
+
+
+li{
+    color: black
 }
